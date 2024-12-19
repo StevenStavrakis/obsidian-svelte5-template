@@ -7,4 +7,4 @@ This is the first version, so I'm sure I'll find things that need to be changed.
 ## Notes
 - `@types` is aliased to `src/types` to make it easier to import types across the project.
 - Make sure to adjust your `manifest.json` file with the correct `id`, `name`, `version`, and `minAppVersion` values.
-- For the hot reload to work, you must include a .hotreload file into the plugin directory
+- Hot reloading of the plugin in Obsidian will only work if you have a `.hotreload` file in the plugin's directory.
