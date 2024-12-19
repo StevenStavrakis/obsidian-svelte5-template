@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-svelte5-template",
+	"name": "Obsidian Svelte5 Template",
+	"description": "Easily create a Svelte5 plugin for Obsidian",
+	"author": "Steven Stavrakis",
+	"authorUrl": "https://stavrak.is",
+	"version": "0.0.1",
+	"minAppVersion": "1.0.0",
+	"isDesktopOnly": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-svelte5-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --mode development --watch",
+    "build": "vite build --mode production",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.2",
+    "svelte": "^5.14.3",
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "obsidian": "^1.7.2"
+  }
+}
