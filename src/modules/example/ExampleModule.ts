@@ -10,9 +10,9 @@ export class ExampleModule implements PluginModule {
     }
 
     onload(): void {
-        const ribbonIconEl = this.plugin.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
+        this.plugin.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
             // Called when the user clicks the icon.
-            new Notice('This is a notice!');
+            new Notice('This is a notice!!');
         });
     }
 
