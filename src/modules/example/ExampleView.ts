@@ -21,10 +21,7 @@ export class ExampleView extends ItemView {
 
     async onOpen(): Promise<void> {
         this.component = mount(ExampleComponent, {
-            target: this.containerEl,
-            props: {
-                prop: this.identifier,
-            },
+            target: this.contentEl,
         });
     }
 

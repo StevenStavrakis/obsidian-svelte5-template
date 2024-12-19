@@ -37,22 +37,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "69b384e1ac9ba856",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "18f320326218fac4",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -175,13 +159,23 @@
               "icon": "lucide-list",
               "title": "Outline of Welcome"
             }
+          },
+          {
+            "id": "e7a0a67d9dbda685",
+            "type": "leaf",
+            "state": {
+              "type": "example",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Example View"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +188,7 @@
       "obsidian-svelte5-template:Sample Plugin": false
     }
   },
-  "active": "f79192b0ea382b32",
+  "active": "e7a0a67d9dbda685",
   "lastOpenFiles": [
     "Welcome.md",
     "test-directory/File 2.md",
