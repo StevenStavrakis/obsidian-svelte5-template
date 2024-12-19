@@ -42,5 +42,6 @@ export default defineConfig(({ mode }) => ({
       ],
     },
     outDir: mode === 'production' ? 'dist' : './dev-vault/.obsidian/plugins/obsidian-plugin',
+    emptyOutDir: false
   },
 }));
