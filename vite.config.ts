@@ -3,13 +3,18 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { pathToFileURL } from 'url';
 import { builtinModules } from 'module';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import path, { dirname } from 'path';
 
 // Get __dirname in ESM context
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig(({ mode }) => ({
+  resolve: {
+    alias: {
+      "@types": path.resolve(__dirname, "./src/types")
+    }
+  },
   plugins: [svelte()],
   build: {
     lib: {
@@ -42,6 +47,6 @@ export default defineConfig(({ mode }) => ({
       ],
     },
     outDir: mode === 'production' ? 'dist' : './dev-vault/.obsidian/plugins/obsidian-plugin',
-    emptyOutDir: false
+    emptyOutDir: mode === 'production'
   },
 }));
