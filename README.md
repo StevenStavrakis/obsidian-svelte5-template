@@ -1,4 +1,6 @@
-# Template: Obsidian Plugins with Svelte 5
+# Template: Obsidian Plugins with Svelte 5 (deprecated)
+
+This template lasted for one day before I redid it. You can find the new version here: https://github.com/StevenStavrakis/obsidian-plugin-svelte-template
 
 This is a template for building Obsidian plugins with Svelte 5. It's mostly the defualt Vite svelte-ts configuration with some additional settings to make it work with Obsidian.
 
