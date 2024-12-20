@@ -5,7 +5,7 @@
 </script>
 
 <div>
-    <h1>Example Component</h1>
+    <h1 class="text-3xl">Example Component</h1>
     <h2>Local State</h2>
     {count}
     <button onclick={() => count++}>+</button>

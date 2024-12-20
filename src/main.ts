@@ -1,6 +1,7 @@
 import { App, type PluginManifest, Plugin } from "obsidian"
 import type { PluginModule } from "./types/devTypes"
 import { ExampleModule } from "./modules/example/ExampleModule";
+import "./styles.css"
 
 
 export default class MyPlugin extends Plugin {

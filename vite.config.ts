@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
+import { svelte, vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { pathToFileURL } from 'url';
 import { builtinModules } from 'module';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
+import tailwindcss from '@tailwindcss/vite';
 
 // Get __dirname in ESM context
 const __filename = fileURLToPath(import.meta.url);
@@ -15,7 +16,12 @@ export default defineConfig(({ mode }) => ({
       "@types": path.resolve(__dirname, "./src/types")
     }
   },
-  plugins: [svelte()],
+  plugins: [svelte({
+    preprocess: vitePreprocess(),
+    compilerOptions: {
+      css: "external"
+    }
+  }), tailwindcss()],
   build: {
     lib: {
       entry: "src/main",
